@@ -1,0 +1,51 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #212121;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .buttons{
+    margin-top: 30px;
+}
+
+.container .buttons button{
+    width: 200px;
+    height: 35px;
+    background-color: #FFCA28;
+    color: #212121;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.container .buttons button:hover{
+    transform: scale(1.06);
+}
+
+.container .buttons button:not(:last-child){
+    margin-right: 20px;
+}
+
+.container .images{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.container .images img{
+    width: 300px;
+    border-radius: 20px;
+}
